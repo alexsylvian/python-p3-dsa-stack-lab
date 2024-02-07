@@ -35,11 +35,11 @@ class TestStack:
     def test_empty(self):
         '''Test Stack empty() method'''
         stk = Stack()
-        assert(stk.isEmpty())
+        assert(stk.is_empty())
         assert(stk.size() == 0)
         assert(stk.pop() == None)
         stk.push(1)
-        assert(not stk.isEmpty())
+        assert(not stk.is_empty())
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
 
